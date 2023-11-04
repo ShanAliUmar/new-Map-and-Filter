@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Product from './Product';
+import Product from './Api.js';
 import Api from './Api.js'
 
 const Search = () => {
@@ -8,6 +8,7 @@ const Search = () => {
 
   return (
       <div>
+        
         <div className="app">
           <div className="boxstart">
             <input
