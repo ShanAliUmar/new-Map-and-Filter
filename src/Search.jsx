@@ -1,30 +1,37 @@
-import React, { useState } from 'react'
-import { Api } from './Api'
-import './App.css'
-import Contant from './Contant'
-function Search() {
-  const [quer, setQuer] = useState("")
-  return (
-    <div>
-      <div className="app">
-        <div className="boxstart">
-        <input type="text"  placeholder='Search' className="Search" onChange={e => setQuer(e.target.value)} />
-        </div>
-        <ul className="list">
-          {Api.filter(api => api.name.toLocaleLowerCase().includes(quer)).map(api => ( 
-            <div className="box">
-              <img src={api.img} alt="" className="image" />
-              <li key={api.id} className="listItem">{api.name}</li>
-              <div className="li">{api.price}$</div>
-              <button className="btn"><a href="#contant">Click</a></button>
-            </div>
-          ))}
-        </ul>
-      </div>
-      <Contant/>
-    </div>
-    
-  )
-};
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Product from './Product'; // Import the Product component
 
+const Search = () => {
+  const [quer, setQuer] = useState('');
+  // Your Api data
+
+  return (
+      <div>
+        <div className="app">
+          <div className="boxstart">
+            <input
+              type="text"
+              placeholder="Search"
+              className="Search"
+              onChange={(e) => setQuer(e.target.value)}
+            />
+          </div>
+          <ul className="list">
+            {Api.filter((api) => api.name.toLowerCase().includes(quer)).map((api) => (
+              <div className="box" key={api.id}>
+                <img src={api.img} alt="" className="image" />
+                <li className="listItem">{api.name}</li>
+                <div className="li">{api.price}$</div>
+                {/* Link to the product details page */}
+                <button className="btn">
+                  <a href={`/product/${api.id}`}>Click</a>
+                </button>
+              </div>
+            ))}
+          </ul>
+        </div>
+      </div>
+    )
+}
 export default Search
