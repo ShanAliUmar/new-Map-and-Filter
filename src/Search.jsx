@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Product from './Product'; // Import the Product component
+import Product from './Product';
 
 const Search = () => {
   const [quer, setQuer] = useState('');
