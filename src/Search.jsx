@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Product from './Product';
+import Api from './Api.js'
 
 const Search = () => {
   const [quer, setQuer] = useState('');
-  // Your Api data
 
   return (
       <div>
@@ -23,7 +23,6 @@ const Search = () => {
                 <img src={api.img} alt="" className="image" />
                 <li className="listItem">{api.name}</li>
                 <div className="li">{api.price}$</div>
-                {/* Link to the product details page */}
                 <button className="btn">
                   <a href={`/product/${api.id}`}>Click</a>
                 </button>
