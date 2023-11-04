@@ -1,5 +1,5 @@
 import React from 'react';
-const ProductDetail = ({ product }) => {
+export const ProductDetail = ({ product }) => {
   return (
     <div>
       <h2>{product.name}</h2>
@@ -8,5 +8,3 @@ const ProductDetail = ({ product }) => {
     </div>
   );
 };
-
-export default ProductDetail;
