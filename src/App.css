@@ -7,6 +7,7 @@
 .app{
     width: 100vw;
     height: 100vh;
+    display: none;
     background-color: rgb(255, 255, 255);
 }
 .Search{
@@ -63,6 +64,9 @@ a{
     flex-direction: column;
     gap: 20px;
     position: fixed;
+}
+.box12{
+    border: 2px solid gray;
 }
 form{
     display: flex;
