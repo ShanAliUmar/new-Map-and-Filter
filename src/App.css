@@ -11,12 +11,20 @@
 }
 
 .Search {
-    background-color: rgba(161, 147, 175, 0.795);
+    background-color: rgba(221, 214, 228, 0.795);
     padding: 20px 40px;
     margin: auto;
     outline: none;
     border: 2px solid gray;
+    cursor: pointer;
     border-radius: 10px;
+    transition: 2s;
+    
+}
+.Search:hover{
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.795);
+    background-color: rgba(168, 144, 194, 0.795);
+    transition: 2s;
 }
 
 .boxstart {
@@ -30,13 +38,15 @@
 .box {
     border: 2px solid gray;
     padding: 20px 3px;
+    transition: 2s;
     background-color: rgb(253, 227, 193);
  
 }
 
 .box:hover {
     background-color: aquamarine;
-    transition: 1s;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.795);
+    transition: 2s;
     cursor: pointer;
 }
 
@@ -140,14 +150,6 @@ form {
     bottom: 0;
     right: 0;
     gap: 20px;
-}
-
-textarea {
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.534);
-    border-radius: 7px;
-    color: #000;
-    text-transform: capitalize;
 }
 
 input {
