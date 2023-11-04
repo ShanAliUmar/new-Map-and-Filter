@@ -16,7 +16,9 @@ function Search() {
               <img src={api.img} alt="" className="image" />
               <li key={api.id} className="listItem">{api.name}</li>
               <div className="li">{api.price}$</div>
-              <button className="btn"><a href="#contant">Click</a></button>
+              <button className="btn">
+                <a href="#contant">Click</a>
+              </button>
             </div>
           ))}
         </ul>
