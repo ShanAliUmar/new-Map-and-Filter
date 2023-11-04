@@ -62,6 +62,7 @@ a{
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    position: fixed;
 }
 form{
     display: flex;
@@ -76,6 +77,8 @@ form{
 }
 input{
     padding: 10px 20px ;
+    border: 2px solid gray;
+    outline: none;
 }
 @media (max-width: 700px)
 {
