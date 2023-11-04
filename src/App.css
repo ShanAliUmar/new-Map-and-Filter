@@ -45,12 +45,37 @@
     /* margin-bottom: -100px; */
     cursor: pointer;
 }
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
 .listItem{
     list-style-type: none;
     margin: 20px;
 }
 .image{
     width: 100px;
+}
+#contant{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid gray;
+    padding: 20px;
+    background-color: aqua;
+    border-radius: 10px;
+    gap: 20px;
+}
+input{
+    padding: 10px 20px ;
 }
 @media (max-width: 700px)
 {
