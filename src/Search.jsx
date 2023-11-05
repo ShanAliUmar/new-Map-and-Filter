@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Api } from './Api'
 import './App.css'
-import Contant from './Contant'
+// import Contant from './Contant'
 function Search() {
   const [quer, setQuer] = useState("")
   return (

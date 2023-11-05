@@ -95,7 +95,6 @@ a {
 
     25% {
         padding: 10px;
-        transform: rotate(30deg);
         transition: 2s all ease-in-out;
     }
 
@@ -107,7 +106,6 @@ a {
     75% {
         padding: 10px;
         transition: 2s all ease-in-out;
-        transform: rotate(-30deg);
     }
 
     100% {
