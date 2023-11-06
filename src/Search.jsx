@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Api } from './Api'
 import './App.css'
-// import Contant from './Contant'
+import Contant from './Contant'
 function Search() {
   const [quer, setQuer] = useState("")
   return (
@@ -17,7 +17,7 @@ function Search() {
               <li key={api.id} className="listItem">{api.name}</li>
               <div className="li">{api.price}$</div>
               <button className="btn">
-                <a href="#contant">Click</a>
+                <a href='#Contant' >Click</a>
               </button>
             </div>
           ))}
