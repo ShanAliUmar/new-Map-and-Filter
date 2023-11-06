@@ -17,7 +17,9 @@ function Search() {
               <li key={api.id} className="listItem">{api.name}</li>
               <div className="li">{api.price}$</div>
               <button className="btn">
+                <Contant>
                 <a href='#Contant' >Click</a>
+                </Contant>
               </button>
             </div>
           ))}
