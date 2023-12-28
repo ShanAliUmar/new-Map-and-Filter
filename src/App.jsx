@@ -1,5 +1,6 @@
 import Search from "./Search";
 
+
 const App = () => {
   return (
     <>
